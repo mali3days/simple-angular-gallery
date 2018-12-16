@@ -1,0 +1,3 @@
+<div class="gallery">
+  <img *ngFor="let image of (galleryService.images | async)" src="https://picsum.photos/200/300?image={{image.id}}" alt="image" class="gallery-image">
+</div>
